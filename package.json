@@ -1,38 +1,45 @@
 {
   "name": "jshint-stylish",
-  "version": "0.2.0",
+  "version": "2.2.0",
   "description": "Stylish reporter for JSHint",
   "license": "MIT",
   "repository": "sindresorhus/jshint-stylish",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "xo && mocha"
   },
   "files": [
-    "index.js",
-    "stylish.js"
+    "index.js"
   ],
   "keywords": [
     "jshint",
     "reporter",
+    "formatter",
+    "format",
     "lint",
     "validate",
     "stylish",
-    "elegant"
+    "elegant",
+    "pretty"
   ],
   "dependencies": {
-    "chalk": "~0.4.0",
-    "text-table": "~0.2.0"
+    "chalk": "^1.0.0",
+    "log-symbols": "^1.0.0",
+    "plur": "^2.1.0",
+    "string-length": "^1.0.0",
+    "text-table": "^0.2.0",
+    "beeper": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*",
-    "jshint": "~2"
+    "jshint": "^2",
+    "xo": "*"
   }
 }
